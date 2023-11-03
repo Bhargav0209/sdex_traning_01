@@ -10,7 +10,7 @@ body {
     padding: 20px; /* Adjusted padding */
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     background-color: skyblue;
-    max-width: 1100px;
+    max-width: 1170px;
     margin: auto;
 }
 
@@ -118,4 +118,7 @@ button1, button2{
 button2 {
     background-color:rgb(27, 131, 165);
     color: white;
+}
+td:last-child {
+    width: 300px; /* Adjust the width as needed */
 }
