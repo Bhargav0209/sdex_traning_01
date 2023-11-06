@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
 
 <body>
@@ -25,6 +26,11 @@
                             <th>Action</th>
                         </tr>
                     </table>
+                    <div id="pagination">
+                        <button onclick="prevPage()">Previous</button>
+                        <span>Page: <span id="currentPage">1</span></span>
+                        <button onclick="nextPage()">Next</button>
+                    </div>
                 </div>
                 <div id="form-container">
                     <h2 class="container-heading">Form Filling <i class="fa-brands fa-wpforms"></i></h2>
@@ -35,7 +41,8 @@
                         <input class="inp" type="text" id="id" name="id" placeholder="enter id"><br>
                         <label class="formLable" for="title">Title:</label>
                         <input class="inp" type="text" id="title" name="title" placeholder="title"><br>
-                        <label class="formLable" for="completed">Completed <i class="fa-regular fa-square-check"></i>:</label>
+                        <label class="formLable" for="completed">Completed <i
+                                class="fa-regular fa-square-check"></i>:</label>
                         <input type="checkbox" id="completed" name="completed"><br><br>
                         <input type="submit" value="Submit">
                     </form>
@@ -43,7 +50,10 @@
             </div>
         </div>
     </div>
+    
+
     <script src="./data.js"></script>
 </body>
 
 </html>
+ 

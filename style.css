@@ -7,17 +7,17 @@ body {
 #combined-container {
     border: 1px solid white;
     border-radius: 10px;
-    padding: 20px; /* Adjusted padding */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    padding: 15px; /* Adjusted padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: skyblue;
-    max-width: 1170px;
+    max-width: 90%;
     margin: auto;
 }
 
 /*  container headings */
 .container-heading {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
     text-align: center;
     color: #333;
 }
@@ -25,15 +25,15 @@ body {
 /*  form labels and inputs */
 .formLable,
 .inp {
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: calc(100% - 16px); /* Adjusted width */
     box-sizing: border-box;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 /*  form labels */
 .formLable {
-    font-size: 17px;
+    font-size: 14px;
     color: black;
 }
 
@@ -46,7 +46,7 @@ body {
 #Project-form input[type="submit"] {
     background-color: green;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -66,8 +66,8 @@ table {
 }
 
 th, td {
-    border: 2px solid #333;
-    padding: 8px;
+    border: 1px solid #333;
+    padding: 6px;
     text-align: center;
 }
 
@@ -87,27 +87,23 @@ tr:hover {
 
 #container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-@media only screen and (max-width: 900px) {
-    .form-container {
-        width: 100%;
-    }
-
-    .formLabel,
-    .inp {
-        width: 100%;
+@media only screen and (min-width: 600px) {
+    /* Adjustments for larger screens */
+    #container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Style for the action buttons in the table */
-button1, button2{
-    background-color:red;
+ button1  {
+    background-color: red;
     color: white;
     padding: 5px 10px;
-    /* border: none; */
+    border: none;
     border-radius: 3px;
     cursor: pointer;
     font-size: 12px;
@@ -116,9 +112,10 @@ button1, button2{
 }
 
 button2 {
-    background-color:rgb(27, 131, 165);
+    background-color: rgb(27, 131, 165);
     color: white;
+    cursor: pointer;
 }
 td:last-child {
-    width: 300px; /* Adjust the width as needed */
+    width: 180px;
 }
