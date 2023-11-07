@@ -14,7 +14,7 @@ body {
     margin: auto;
 }
 
-/*  container headings */
+/* container headings */
 .container-heading {
     font-size: 18px;
     margin-bottom: 10px;
@@ -22,7 +22,7 @@ body {
     color: #333;
 }
 
-/*  form labels and inputs */
+/* form labels and inputs */
 .formLable,
 .inp {
     display: block;
@@ -31,13 +31,13 @@ body {
     margin-bottom: 8px;
 }
 
-/*  form labels */
+/* form labels */
 .formLable {
     font-size: 14px;
     color: black;
 }
 
-/*  form inputs */
+/* form inputs */
 .inp {
     padding: 8px;
 }
@@ -99,23 +99,49 @@ tr:hover {
 }
 
 /* Style for the action buttons in the table */
- button1  {
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
+button1,
+button2 {
+    display: block;
+    margin: 5px auto;
+    padding: 8px 12px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
     font-size: 12px;
-    margin-right: 3px;
-    margin-left: 3px;
+    text-align: center;
+}
+
+button1 {
+    background-color: red;
+    color: white;
 }
 
 button2 {
     background-color: rgb(27, 131, 165);
     color: white;
-    cursor: pointer;
 }
+
 td:last-child {
     width: 180px;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Style for the pagination buttons */
+#pagination button {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Hover effect for pagination buttons */
+#pagination button:hover {
+    background-color: grey;
 }

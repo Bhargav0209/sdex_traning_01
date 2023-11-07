@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
@@ -27,9 +27,9 @@
                         </tr>
                     </table>
                     <div id="pagination">
-                        <button onclick="prevPage()">Previous</button>
+                        <button onclick="prevPage()"><i class="fa-solid fa-backward"></i> Previous</button>
                         <span>Page: <span id="currentPage">1</span></span>
-                        <button onclick="nextPage()">Next</button>
+                        <button onclick="nextPage()">Next <i class="fa-solid fa-forward"></i></button>
                     </div>
                 </div>
                 <div id="form-container">
@@ -50,10 +50,7 @@
             </div>
         </div>
     </div>
-    
-
     <script src="./data.js"></script>
 </body>
 
 </html>
- 
