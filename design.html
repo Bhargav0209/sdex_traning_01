@@ -28,23 +28,31 @@
                     </table>
                     <div id="pagination">
                         <button onclick="prevPage()"><i class="fa-solid fa-backward"></i> Previous</button>
-                        <span>Page: <span id="currentPage">1</span></span>
+                        <span><i class="fa-solid fa-file"></i> Page: <span id="currentPage">1</span></span>
                         <button onclick="nextPage()">Next <i class="fa-solid fa-forward"></i></button>
                     </div>
                 </div>
                 <div id="form-container">
                     <h2 class="container-heading">Form Filling <i class="fa-brands fa-wpforms"></i></h2>
                     <form id="Project-form">
-                        <label class="formLable" for="userID">UserID <i class="fa-solid fa-user"></i>:</label>
-                        <input class="inp" type="text" id="userID" name="userID" placeholder="userid"><br>
-                        <label class="formLable" for="id">ID <i class="fa-solid fa-hashtag"></i>:</label>
-                        <input class="inp" type="text" id="id" name="id" placeholder="enter id"><br>
-                        <label class="formLable" for="title">Title:</label>
-                        <input class="inp" type="text" id="title" name="title" placeholder="title"><br>
-                        <label class="formLable" for="completed">Completed <i
-                                class="fa-regular fa-square-check"></i>:</label>
-                        <input type="checkbox" id="completed" name="completed"><br><br>
-                        <input type="submit" value="Submit">
+                        <div class="mb-3">
+                            <label class="formLable" for="userID">UserID <i class="fa-solid fa-user"></i>:</label>
+                            <input class="inp form-control" type="text" id="userID" name="userID" placeholder="UserID">
+                        </div>
+                        <div class="mb-3">
+                            <label class="formLable" for="id">ID <i class="fa-solid fa-hashtag"></i>:</label>
+                            <input class="inp form-control" type="text" id="id" name="id" placeholder="Enter ID">
+                        </div>
+                        <div class="mb-3">
+                            <label class="formLable" for="title">Title:</label>
+                            <input class="inp form-control" type="text" id="title" name="title" placeholder="Title">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input class="form-check-input" type="checkbox" id="completed" name="completed">
+                            <label class="form-check-label" for="completed">Completed <i
+                                    class="fa-regular fa-square-check"></i>:</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </form>
                 </div>
             </div>

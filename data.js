@@ -1,5 +1,6 @@
 const form = document.getElementById("Project-form");
 const table = document.getElementById("dataTable");
+const currentPageSpan = document.getElementById("currentPage");
 
 let currentPage = 1;
 const itemsPerPage = 10;
@@ -133,6 +134,6 @@ fetch('https://mock-api-template-rh6s.onrender.com/users')
         data = dataResponse; // Set the data in the global scope
         generateTable(data, currentPage);
         showPage(currentPage);
-        updatePageNumber();
+updatePageNumber();
     })
     .catch(myError);
